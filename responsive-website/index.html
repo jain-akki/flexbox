@@ -6,12 +6,91 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    *{
+      box-sizing: border-box;
+    }
+
+    /* Style the body */
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0%;
+    }
+
+    /* Header */
+    .header{
+      padding: 60px;
+      text-align: center;
+      background: #1abc9c;
+      color: white;
+    }
+
+    /* Style the top navigation bar */
+    .navbar{
+      display: flex;
+      background: #333;
+    }
+
+    /* Style the navigation bar links */
+    .navbar a{
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    /* Change color on hover */
+    .navbar a:hover{
+      background: #ddd;
+      color: black;
+    }
+
+    /* Column container */
+    .row{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    /* Create two unequal columns that sits next to each other */
+    /* Sidebar */
+    .side{
+      flex-basis: 30%;
+      background: #f1f1f1;
+      padding: 20px;
+    }
+
+    /* Main column */
+    .main{
+      flex: 70%;
+      background: white;
+      padding: 20px;
+    }
+
+    /* Fake image, just for this example */
+    .fakeimg{
+      background: #aaa;
+      width: 100%;
+      padding: 20px;
+    }
+
+    /* Footer */
+    .footer{
+      padding: 20px;
+      text-align: center;
+      background: #ddd;
+    }
+
+    /* Media query for responsive layout */
+    @media screen and (max-width: 700px){
+      .row, .navbar{
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 
 <body>
   <!-- Note -->
-  <div style="background: yellow;padding:5px;">
+  <div style="background: yellow; padding:5px;">
     <h4 style="text-align: center;">Resize the browser window to see the responsive effect.</h4>
   </div>
 
